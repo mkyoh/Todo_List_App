@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ToDo from "./components/ToDo";
-import { addToDo, getAllToDo, updateToDo } from "./utils/HandleApi";
+import { addToDo, deleteToDo, getAllToDo, updateToDo } from "./utils/HandleApi";
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <div className="Container">
         <h1>To Do List app</h1>
         <div className="top">
-          <input type="text" placeholder="Add ToDos..." value={text}
+          <input type="text" placeholder="your to do lists..." value={text}
             onChange={(e) => setText(e.target.value)} />
           <div className="add"
             onClick={isUpdating ? () => updateToDo(toDoId, text, setToDo, setText, setIsUpdating) : () => addToDo(text, setText, setToDo)}>
@@ -30,7 +30,7 @@ function App() {
 
         </div>
         <div className="list">
-          {toDo.map((item) => <ToDo key={item._id} text={item.text} updateMode={(item._id, item.text)} />)}
+          {toDo.map((item) => <ToDo key={item._id} text={item.text} updateMode={() => updateMode(item._id, item.text)} deleteToDo={() => deleteToDo(item._id, setToDo)} />)}
 
         </div>
       </div>

@@ -41,14 +41,15 @@ input{
   color: #fff;
   padding:0.5rem 1.5rem;
   cursor: pointer;
+  
 }
 .todo{
   position: relative;
   margin-top: 1rem;
-  background-color: #000;
-  color:#fff;
+  background-color: yellow;
+  color:black;
   padding: 1.5rem 3rem;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .icons{
   position: absolute;
