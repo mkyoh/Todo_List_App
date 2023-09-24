@@ -18,4 +18,4 @@ Built on the MERN Stack with `NodeJs` `ReactJs` `Express` `Chakra UI` `Redux Too
 
 ## Screenshot
 
-![Home](src.png)
+![Home](screenshot.png)
