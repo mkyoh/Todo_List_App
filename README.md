@@ -1,7 +1,7 @@
 # Todo_List_App
 this is Mern stack todo list app
 
-### ✨ [Live Demo](https://todo-list-app-one-delta.vercel.app/)
+### ✨ [Live Demo](https://todo-list-app-peach.vercel.app/)
 
 ## Overview
 
