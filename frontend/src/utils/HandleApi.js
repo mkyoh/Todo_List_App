@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = "http://localhost:5000"
+const baseUrl = "https://todo-list-app-ifdk.onrender.com"
 const getAllToDo = (setToDo) => {
     axios
         .get(baseUrl)
